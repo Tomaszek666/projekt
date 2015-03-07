@@ -26,7 +26,7 @@ echo "gowno.<br />";
 for ($i = 0; $i < 10; $i++) {
     echo "Czesc.<br />";
 }
-
+echo "pojebane gowno";
 echo "Siemka";
 $html->wyswietl_body();
 if(isset($_GET['akcja2'])&&($_GET['akcja2'])=='nr_strony')
