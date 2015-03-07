@@ -21,7 +21,9 @@ $obrobka_zdjecia = new obrobka_zdj();
 
 // $smarty->assign("uzytkownik", $wysw->wysw_uzyt());
 $html->wyswietl_header();
-echo "Czesc.<br />";
+for ($i = 0; $i < 10; $i++) {
+    echo "Czesc.<br />";
+}
 $html->wyswietl_body();
 if(isset($_GET['akcja2'])&&($_GET['akcja2'])=='nr_strony')
 {
