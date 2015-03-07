@@ -21,6 +21,8 @@ $obrobka_zdjecia = new obrobka_zdj();
 
 // $smarty->assign("uzytkownik", $wysw->wysw_uzyt());
 $html->wyswietl_header();
+echo "Czesc.<br />";
+echo "gowno.<br />";
 for ($i = 0; $i < 10; $i++) {
     echo "Czesc.<br />";
 }
