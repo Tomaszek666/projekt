@@ -1,0 +1,22 @@
+ {include file="head.tpl"}
+ <h1>{$title}</h1> 
+ <h2></h2>
+ <div id="siemka">{$wyswietlanie_zdjec_uzytkownika}</div>
+ <div id="siemka2">{$wyswietlanie_tylko_zdjec_uzytkownika}</div>
+
+<table>
+      <tr style="font-weight:bold;">
+        <td>nr_zdj</td>
+        <td>uzytkownik</td>
+        <td>popularnosc_zdj</td>
+      </tr>
+    {section name=d loop=$popularnosc_zdj}
+      <tr>
+        <td>{$popularnosc_zdj[d].nr_zdj}</td>
+        <td>{$popularnosc_zdj[d].uzytkownik}</td>
+        <td>{$popularnosc_zdj[d].popularnosc_zdj}&nbsp<a href="index.php?akcja=dodawanie_zdj&ilosc={$popularnosc_zdj[d].popularnosc_zdj}&id={$popularnosc_zdj[d].id_zdj}">+</a>&nbsp<a href="index.php?akcja=odejmowanie_zdj&ilosc={$popularnosc_zdj[d].popularnosc_zdj}&id={$popularnosc_zdj[d].id_zdj}">-</a></td>
+      </tr>
+    {/section}
+</table>
+
+{include file="footer.tpl"} 
